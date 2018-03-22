@@ -1,0 +1,174 @@
+body {
+    padding-top: 50px;
+    background-color: rgb(4, 117, 79, 0.1);
+}
+
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #bbb;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.outside{
+	position: relative;
+	margin:auto;
+	background-color: #f2f4f7;
+	width : 540px;
+	height: 650px;
+	border-radius: 5px;
+}
+
+.cont{
+    position: relative;
+	border-radius: 5px;
+	width : 510px;
+	height: 630px;
+	margin:auto;
+}
+
+.userlist{
+	padding: 50px;
+	display: grid;
+	grid-row-gap: 1em;
+}
+
+.tet{
+	display: grid;
+	grid-template-columns: repeat(2,.09fr);
+}
+.tetlogo{
+	margin-top: 20px;
+}
+
+.outer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    position: relative;
+	border-radius: 5px;
+	border-width: 10px;
+	border-color: rgb(0, 0, 0, 0.8);
+	border-style: solid;
+	background-color: #eaf9ff;
+	width : 600px;
+	height: auto;
+}
+
+.contained{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	margin: 10px;
+}
+
+.outercont{
+	display: grid;
+	grid-row: 1em;
+	border-radius: 5px;
+	border-width: 10px;
+	border-color: rgb(0, 0, 0, 0.8);
+	border-style: solid;
+	background-color: #eaf9ff;
+	width: auto;
+	height: auto;
+}
+
+.side1{
+	display: grid;
+	margin: auto;
+}
+
+.side2{
+	display: grid;
+}
+
+.profilepic{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 10px;
+}
+.col2{
+	position: relative;
+	display: grid;
+	margin-top: 10px;
+}
+
+.col3{
+	position: relative;
+	display: grid;
+	grid-template-columns: 2fr;
+	grid-row-gap: 2em;
+}
+
+.name{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 10fr;
+	position: relative;
+	float: left;
+}
+
+.gender{
+	display: grid;
+	grid-template-columns: repeat(2,.1fr);
+	position: relative;
+	float: left;
+	
+}
+
+.location{
+	display: grid;
+	grid-template-columns: repeat(2,.1fr);
+	position: relative;
+	float: left;
+}
+
+.email{
+	display: grid;
+	grid-template-columns: repeat(2,.06fr);
+	position: relative;
+	float: left;
+}
+
+.user{
+	display: grid;
+	grid-template-columns: 1fr 24fr;
+	position: relative;
+	float: left;
+}
+
+.date{
+	display: grid;
+	grid-template-columns: repeat(2,.05fr);
+	position: relative;
+	float: left;
+}
+
+.locate{
+	display: grid;
+	grid-template-columns: repeat(2,.04fr);
+	position: relative;
+	float: left;
+}
+
+.btn{
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;
+}
+
+.btns{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 2px;
+	position: relative;
+}
+
+.logo{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+}

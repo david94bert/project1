@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="outside">
+  <div class="cont">
+    <div class="form-group">
+      <h2>Add Profile</h2>
+    </div>
+    {% include 'flash_messages.html' %}
+    <form action="{{ url_for('createuser') }}" method="post" enctype="multipart/form-data">
+      {{ form.csrf_token }}
+      <div class="form-group">
+        {{ form.firstname.label }}
+        {{ form.firstname(class='form-control', placeholder="Enter your firstname") }}
+      </div>
+      <div class="form-group">
+        {{ form.lastname.label }}
+        {{ form.lastname(class='form-control', placeholder="Enter your lastname") }}
+      </div>
+      <div class="form-group">
+        {{ form.gender.label }}
+        {{ form.gender(class='form-control', placeholder="Select gender") }}
+      </div>
+      <div class="form-group">
+        {{ form.email.label }}
+        {{ form.email(class = "form-control", placeholder="eg. myname@example.com")}}
+      </div>
+      <div class="form-group">
+        {{ form.location.label }}
+        {{ form.location(class = "form-control", placeholder="eg. Kingston, JM")}}
+      </div>
+      <div class="form-group">
+        {{ form.bio.label }}
+        {{ form.bio(class='form-control', placeholder="Enter your bio") }}
+      </div>
+      <div class="form-group">
+        {{ form.image.label }}
+        {{ form.image(class='form-control', placeholder="Upload an image") }}
+      </div>
+      
+      <button type="submit" name="submit" class="btn btn-primary btn-block">Create User</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{%block main%}
+<h1>Profile</h1>
+<div class="outercont">
+<div class="contained">
+  <div class="col1">
+    <img src="{{data['image']}}" height="250" width="250" alt = "profile picture">
+  </div>
+  <div class="col2">
+      <div class="user">
+        <img class="img-responsive" src=" {{url_for('static', filename='resources/id.png')}}" height="24" width="24" alt = "id icon" >
+        {{data['firstname']}}
+        {{data['lastname']}}
+      </div>
+      <div class="email">
+        <img class="img-responsive" src=" {{url_for('static', filename='resources/mail.png')}}" height="19" width="19" alt = "mail icon" >
+        {{data['email']}}
+      </div>
+      <div class="locate">
+        <img class="img-responsive" src=" {{url_for('static', filename='resources/location.png')}}" height="19" width="19" alt = "location icon" >
+        {{data['location']}}
+      </div>
+      <div class="date">
+        <img class="img-responsive" src=" {{url_for('static', filename='resources/calendar.png')}}" height="19" width="19" alt = "calendar icon" >
+        {{data['created_on']}}
+      </div>
+  </div>
+  <div class="col3">
+        <div class="info">
+          <h4>About Me</h4>
+        
+          {{data['bio']}}
+        </div>
+        <div class="btns">
+          <div class="btn1">
+            <button class="btn btn-success">Send Message</button>
+          </div>
+          <div class="btn2">
+            <button class="btn btn-primary">Follow</button>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
